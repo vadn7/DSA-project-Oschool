@@ -25,10 +25,39 @@ const Queue = require('../queue');
      }  )
 
 */
-     test('Test initial library has zero book', () => 
+     test('Test adding an item to a queue', () => 
         {
-            const library = new Queue();
-library.Enqueue(1);
+            const file = new Queue();
+file.Enqueue(1);
 
-            expect(library.getQueue().length).toBe(1);
+            expect(file.getQueue().length).toBe(1);
         });
+
+        test('Test dequeue with 1,2 ', () => 
+            {
+                const file = new Queue();
+
+                file.Enqueue(1);
+                file.Enqueue(2);
+
+
+                expect(file.Dequeue()).toBe(1);
+
+                expect(file.getQueue().length).toBe(1);
+
+            });
+
+
+            test('Testing Front with 1,2 ', () => 
+                {
+                    const file = new Queue();
+    
+                    file.Enqueue(1);
+                    file.Enqueue(2);
+    
+    
+                    expect(file.Front()).toBe(1);
+    
+                    expect(file.getQueue()).toStrictEqual([1,2]);
+    
+                });
