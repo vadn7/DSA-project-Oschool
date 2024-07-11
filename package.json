@@ -1,0 +1,14 @@
+{
+  "name": "sda",
+  "version": "1.0.0",
+  "description": "Oscholl SDA",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Vadn7",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
