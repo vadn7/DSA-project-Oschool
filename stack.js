@@ -13,18 +13,22 @@ this.stack.push(item);
 
 isEmpty(){
 
-    this.stack=[];
+    return this.stack.length===0;
 }
 
 // Remove the last
-pop() {
+pop() {// Retourne le 1er element ajoute a la pile
 
-return this.stack.splice(this.stack.length-1,1);
+if(this.isEmpty()) return null;
+
+return this.stack[0];
 
 }
 
 //Return the last
 peek () {
+
+    if(this.isEmpty()) return null;
 
 return this.stack[(this.stack.length-1)]
 
@@ -39,19 +43,5 @@ getStack(){
 
 }
 
-
-
-let file = new Stack();
-
-file.push(1);
-
-console.log(file);
-
-
-file.isEmpty();
-
-
-
-console.log(file);
 
 module.exports=Stack;

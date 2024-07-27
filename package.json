@@ -1,4 +1,4 @@
-{
+{"type": "module",
   "name": "sda",
   "version": "1.0.0",
   "description": "Oscholl SDA",
@@ -11,4 +11,5 @@
   "dependencies": {
     "jest": "^29.7.0"
   }
+
 }

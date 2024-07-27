@@ -13,24 +13,23 @@ Enqueue(item){
 
 Dequeue(){
 
-let    first=this.queue[0];
+if(this.isEmpty()) return null;
 
 
-this.queue.splice(0,1);
-
-return first;
+return this.queue.shift();
 
 }
 
-Front() {
 
+Front() {
+if(this.isEmpty()) return null;
 return this.queue[0];
 
 }
 
 isEmpty(){
 
-this.queue=[];
+return this.queue.length===0;
 
 }
 
